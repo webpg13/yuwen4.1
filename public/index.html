@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>react-homework</title>
+  <link rel="stylesheet" href="css/antd.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script crossorigin src="js/react.js"></script>
+  <script crossorigin src="js/react-dom.js"></script>
+  <script crossorigin src="js/babel.min.js"></script>
+  <script src="js/antd.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div id="header"></div>
+    <main class="main">
+      <div id="carousel"></div>
+      <div id="articles"></div>
+      <div id="tutorials"></div>
+    </main>
+    <footer id="footer"></footer>
+    <div id="backtop"></div>
+  </div>
+  <script type="text/babel" src="/static/components/header.jsx"></script>
+  <script type="text/babel" src="/static/components/carousel.jsx"></script>
+  <script type="text/babel" src="/static/components/articles.jsx"></script>
+  <script type="text/babel" src="/static/components/tutorials.jsx"></script>
+  <script type="text/babel" src="/static/components/backtop.jsx"></script>
+  <script type="text/babel" src="/static/components/footer.jsx"></script>
+  <script type="text/babel">
+    const { notification } = antd;
+    notification.info({
+      message: 'Welcome',
+      description:
+        'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+    })
+  </script>
+</body>
+
+</html>
